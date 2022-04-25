@@ -1,7 +1,14 @@
+using ECommerce.Core.Application.Application;
+using ECommerce.Infrastructure.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//Dependency Injection
+builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
 
 var app = builder.Build();
 
