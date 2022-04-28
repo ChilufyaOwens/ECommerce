@@ -1,50 +1,106 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ECommerce.Host.Web</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ECommerce.Host.Web.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <title>KSI - ECommerce</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/2c45b2e647.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">ECommerce.Host.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - ECommerce.Host.Web - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderBody()
+    <!--begin::Quick View-->
+    <partial name="~/Pages/Shared/Partials/_Quick-view.cshtml" />
+    <!--end::Quick View-->
+    <!--begin::header-->
+    <partial name="~/Pages/Shared/Partials/Header/_Header.cshtml" />
+    <!--end::header-->
+    <!--begin::mobile header-->
+    <partial name="~/Pages/Shared/Partials/Header/_Mobile-header-base.cshtml" />
+    <!--end::mobile header-->
+    <!--begin::main-->
+    <main class="main">
+        <!--begin::home slider-->
+        <partial name="~/Pages/Shared/Partials/Main/_Home-slider.cshtml" />
+        <!--end::home slider-->
+        <!--begin::banners-->
+        <partial name="~/Pages/Shared/Partials/Main/_Banners.cshtml" />
+        <!--end::banners-->
+        <!--begin::product-section-->
+        <partial name="~/Pages/Shared/Partials/Main/_Product-section.cshtml" />
+        <!--end::product-section-->
+        <!--begin::banner-2-->
+        <partial name="~/Pages/Shared/Partials/Main/_Banner-2.cshtml" />
+        <!--end::banner-2-->
+        <!--begin::popular-categories-->
+        <partial name="~/Pages/Shared/Partials/Main/_Popular-categories.cshtml" />
+        <!--end::popular-categories-->
+        <!--begin::deals-section-->
+        <partial name="~/Pages/Shared/Partials/Main/_Deals-section.cshtml" />
+        <!--end::deals-section-->
+        <!--begin::new arrival-->
+        <partial name="~/Pages/Shared/Partials/Main/_New-arrivals.cshtml" />
+        <!--end::new arrival-->
+        <!--begin::featured-brands-->
+        <partial name="~/Pages/Shared/Partials/Main/_Featured-brands.cshtml" />
+        <!--end::featured-brands-->
+        <!--begin::monthly-best-sell-->
+        <partial name="~/Pages/Shared/Partials/Main/_Monthly-best-sell.cshtml" />
+        <!--end::monthly-best-sell-->
+        <!--begin::from-blog-->
+        <partial name="~/Pages/Shared/Partials/Main/_From-blog.cshtml" />
+        <!--end::from blog-->
+        <!--begin::today's-deal-->
+        <partial name="~/Pages/Shared/Partials/Main/_Todays-deals.cshtml" />
+        <!--end::today's-deal-->
+        <!--begin::container-->
+        <partial name="~/Pages/Shared/Partials/Main/_Container.cshtml" />
+        <!--end::container-->
+        <!--begin::featured-section-->
+        <partial name="~/Pages/Shared/Partials/Main/_Featured-section.cshtml" />
+        <!--end::featured-section-->
+    </main>
+    <!--end::main-->
+    <!--begin::footer-->
+    <partial name="~/Pages/Shared/Partials/_Footer.cshtml" />
+    <!--end::footer-->
+    <!--begin::preloader-->
+    <partial name="~/Pages/Shared/Partials/_Preloader.cshtml" />
+    <!--end::preloader-->
+    <!-- Vendor JS-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins/slick.js"></script>
+    <script src="assets/js/plugins/jquery.syotimer.min.js"></script>
+    <script src="assets/js/plugins/wow.js"></script>
+    <script src="assets/js/plugins/jquery-ui.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/select2.min.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/counterup.js"></script>
+    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugins/images-loaded.js"></script>
+    <script src="assets/js/plugins/isotope.js"></script>
+    <script src="assets/js/plugins/scrollup.js"></script>
+    <script src="assets/js/plugins/jquery.vticker-min.js"></script>
+    <script src="assets/js/plugins/jquery.theia.sticky.js"></script>
+    <script src="assets/js/plugins/jquery.elevatezoom.js"></script>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/shop.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

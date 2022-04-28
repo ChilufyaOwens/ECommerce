@@ -14,7 +14,7 @@ namespace ECommerce.Infrastructure.Infrastructure.Persistence
         #region Constructors
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options) : base(options)
         {
-            _currentDateTime = DateTime.Now;
+           _currentDateTime = DateTime.Now;
         }
         #endregion
         public DbSet<Category> Categories { get; set; }
