@@ -11,7 +11,7 @@ namespace ECommerce.Infrastructure.Infrastructure
         public static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(
-                configuration.GetConnectionString("AppDatabaseConnection"),
+                configuration.GetConnectionString("ECommerceConnection"),
                 b=>b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)), ServiceLifetime.Transient);
             services.AddScoped<ApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));

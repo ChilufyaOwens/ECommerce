@@ -15,13 +15,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{69AFF160-5CBE-4BB8-84DF-1B2349BDCC3B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Core.Domain.Domain", "ECommerce.Core.Domain.Domain\ECommerce.Core.Domain.Domain.csproj", "{B664F97D-ED99-4A8F-8979-273E7B9D882A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Core.Domain.Domain", "ECommerce.Core.Domain.Domain\ECommerce.Core.Domain.Domain.csproj", "{B664F97D-ED99-4A8F-8979-273E7B9D882A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Core.Application.Application", "ECommerce.Core.Application.Application\ECommerce.Core.Application.Application.csproj", "{1630B4DF-24D0-47E7-B5A0-3E2600308DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Core.Application.Application", "ECommerce.Core.Application.Application\ECommerce.Core.Application.Application.csproj", "{1630B4DF-24D0-47E7-B5A0-3E2600308DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Infrastructure.Infrastructure", "ECommerce.Infrastructure.Infrastructure\ECommerce.Infrastructure.Infrastructure.csproj", "{7BC2F627-C24A-4510-8470-327FC4881FD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Infrastructure.Infrastructure", "ECommerce.Infrastructure.Infrastructure\ECommerce.Infrastructure.Infrastructure.csproj", "{7BC2F627-C24A-4510-8470-327FC4881FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Host.Web", "ECommerce.Host.Web\ECommerce.Host.Web.csproj", "{A2000C24-834E-432D-B3F1-25D8CDA09839}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Host.Frontend.Web", "ECommerce.Host.Web\ECommerce.Host.Frontend.Web.csproj", "{A2000C24-834E-432D-B3F1-25D8CDA09839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{A5E0EE06-5336-4BFB-902D-C005DA4C4F18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{D32F052F-57D6-41FE-8EA4-D532F6D0B6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Host.Backend.Web", "Ecommerce.Host.Backend.Web\Ecommerce.Host.Backend.Web.csproj", "{A77CD902-9EDE-4A95-8219-9FF4A9FC9558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,10 @@ Global
 		{A2000C24-834E-432D-B3F1-25D8CDA09839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2000C24-834E-432D-B3F1-25D8CDA09839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2000C24-834E-432D-B3F1-25D8CDA09839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77CD902-9EDE-4A95-8219-9FF4A9FC9558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77CD902-9EDE-4A95-8219-9FF4A9FC9558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77CD902-9EDE-4A95-8219-9FF4A9FC9558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77CD902-9EDE-4A95-8219-9FF4A9FC9558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,7 +68,10 @@ Global
 		{B664F97D-ED99-4A8F-8979-273E7B9D882A} = {4AE4A617-F41D-4A85-AC00-832F939E281B}
 		{1630B4DF-24D0-47E7-B5A0-3E2600308DF2} = {99156C89-3386-41AB-AF6E-B4E196389B56}
 		{7BC2F627-C24A-4510-8470-327FC4881FD3} = {DC603D1D-C62F-4105-9D16-E3F6FFB786E4}
-		{A2000C24-834E-432D-B3F1-25D8CDA09839} = {69AFF160-5CBE-4BB8-84DF-1B2349BDCC3B}
+		{A2000C24-834E-432D-B3F1-25D8CDA09839} = {A5E0EE06-5336-4BFB-902D-C005DA4C4F18}
+		{A5E0EE06-5336-4BFB-902D-C005DA4C4F18} = {69AFF160-5CBE-4BB8-84DF-1B2349BDCC3B}
+		{D32F052F-57D6-41FE-8EA4-D532F6D0B6A7} = {69AFF160-5CBE-4BB8-84DF-1B2349BDCC3B}
+		{A77CD902-9EDE-4A95-8219-9FF4A9FC9558} = {D32F052F-57D6-41FE-8EA4-D532F6D0B6A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9CBB379F-3EAB-4A46-BE91-F692B8D70680}
